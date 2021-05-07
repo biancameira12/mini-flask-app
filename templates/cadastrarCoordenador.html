@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/estilo.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Cadastro de coordenador</title>
+    <link href="css/estilo.css" rel="stylesheet">
+    <script	src="js/front.js"></script>
+</head>
+
+<body>
+
+<header id="cabecalho">
+
+    	<a href="/index" id="logo">
+
+        <img src="../static/imagens/logo.png" alt="Logomarca da Empresa">
+
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="/index">Pagina Inicial</a></li>
+            </ul>
+        </nav>
+
+</header>
+
+<div class="fotoprincipal"></div>
+
+    <section id="conteudo-form">
+
+        <article class="conteudo-principal-form">
+          <h1>Cadastro de coordenador</h1>
+          <br>
+            <form action="/cadastrar" enctype="multipart/form-data" method="POST">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nomeC" placeholder="Nome" name="nome">
+              <br>
+
+              <label for="email">E-mail:</label>
+              <input type="email" id="emailC" placeholder="E-mail" name="email">
+              <br>
+
+              <label for="telefone">Senha:</label>
+              <input type="tel" id="telefoneC" placeholder="Senha" name="senha">
+              <br>
+
+              <label for="departamento">Departamento que coordena:</label>
+              <input type="text" id="departamentoC" placeholder="Departamento" name="departamento">
+              <br>
+
+              <br>
+              <button class="botaoSecundario" onClick="enviarCord()" type="submit">Enviar</button>
+            </form>
+
+            <br>
+        </article>
+
+        <article class="conteudo-secundario">
+            <img src="../static/imagens/cadastroCoordenador.jpeg" width="500" height="300">
+        </article>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/estilo.css') }}">
+
+<head>
+    <meta charset="UTF-8"> 
+
+    <title> Paginal Inicial - Site da Empresa</title>
+
+    <link href="css/estilo.css" rel="stylesheet"> 
+
+    <script	src="js/front.js"></script>
+</head>
+
+<body>
+<header id="cabecalho">
+
+    	<a href="index.html" id="logo">
+
+        <img src="../static/imagens/logo.png" alt="Logomarca da Empresa">
+
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="loginCoordenador.html">Coordenador</a></li>
+                <li><a href="loginAdministrador.html">Administrador</a></li>
+            </ul>
+        </nav>
+</header>
+
+<div class="fotoprincipal"></div>
+
+    <section id="conteudo">
+
+        <article class="conteudo-principal">
+
+            <h1>Extração de dados: Teses acadêmicas</h1>
+            <div class="campo" id="teste">
+                <label for="bd"><strong>Trabalho: </strong>
+                <select id="bd" required>
+                    {% for t in trabalhos %}
+                    <option selected disabled value="">Selecione</option>
+                    <option>{{t.titulo}}</option>
+                    {% endfor %}
+                </select>
+                </label>
+
+                <div>
+                <button class="botao" type="submit"><a href = "/get-file/FPI">Download</a></button>
+                <button class="botao" type="submit" onClick="indexExtracaoDados()">Extração de dados</button>
+                </div>
+                
+            </div>
+
+        </article>
+
+        <article class="conteudo-secundario">
+
+            <img src="../static/imagens/pdf.png" alt="pdfzinho">
+
+        </article>
+
+    </section>
+
+    <div class="rodape-fora">
+        <footer id="rodape">
+            <br>
+            <p class="telefone-email">
+                contato@sugadosno4.1.com.br
+                <br>
+                <span class="ddd">21</span> 98456-5754
+            </p>
+            <p class="endereco">
+                Rua do Endereço, 1234, Bairro
+                <br>
+                CEP 80000-000
+                <br>
+                Rio de Janeiro - RJ
+            </p>
+            <small class="copyright">
+                Sugados, Empresa Ltda. Todos os Direitos Reservados.
+            </small>
+        </footer>
+    </div>
+
+</body>
+</html>

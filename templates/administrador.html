@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR"> <!-- declarando idioma no HTML -->
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/estilo.css') }}">
+
+<head>
+    <meta charset="UTF-8"> <!-- habilitando acentos e ortografia em pt-br-->
+
+    <title> Pagina Administrador autenticado</title>
+    <link href="css/estilo.css" rel="stylesheet"> <!-- importanto a folha estilo css -->
+</head>
+
+<body>
+  <header id="cabecalho">
+
+      	<a href="/index" id="logo">
+
+          <img src="../static/imagens/logo.png" alt="Logomarca da Empresa">
+
+          <nav id="menu-principal">
+              <ul>
+                  <li><a href="/index">Pagina Inicial</a></li>
+              </ul>
+          </nav>
+
+  </header>
+
+<div class="fotoprincipal"></div>
+
+<section id="conteudo">
+
+    <article class="conteudo-principal-logado">
+        <h1>Administrador</h1>
+        <button class="botaoSecundario" type="submit"><a href = "/cadastrarTrabalho">Cadastrar trabalho</a></button>
+        <br>
+        <button class="botaoSecundario" type="submit" onClick="download()"><a href = "/cadastrarCoordenador">Cadastrar coordenador</a></button>
+        <br>
+        <button class="botaoSecundario" type="submit">Realizar backup</button>
+    
+
+    </article>
+
+    <article class="conteudo-secundario">
+
+      <img src="../static/imagens/administrator.jpg" width="500" height="300">
+
+    </article>
+
+</section>
+
+    <div class="rodape-fora">
+        <footer id="rodape">
+            <br>
+            <p class="telefone-email">
+                contato@sugadosno4.1.com.br
+                <br>
+                <span class="ddd">21</span> 98456-5754
+            </p>
+            <p class="endereco">
+                Rua do Endereço, 1234, Bairro
+                <br>
+                CEP 80000-000
+                <br>
+                Rio de Janeiro - RJ
+            </p>
+            <small class="copyright">
+                Sugados, Empresa Ltda. Todos os Direitos Reservados.
+            </small>
+        </footer>
+    </div>
+
+</body>
+</html>

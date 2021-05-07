@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/estilo.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title> Paginal Inicial - Site da Empresa</title>
+    <link href="css/estilo.css" rel="stylesheet">
+    <script	src="js/front.js"></script>
+</head>
+
+<body>
+
+<header id="cabecalho">
+
+    	<a href="/index" id="logo">
+
+        <img src="../static/imagens/logo.png" alt="Logomarca da Empresa">
+
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="/index">Pagina Inicial</a></li>
+            </ul>
+        </nav>
+
+</header>
+
+<div class="fotoprincipal"></div>
+
+    <section id="conteudo-login">
+
+        <article class="conteudo-principal-login">
+            <h1>Login: Coordenador</h1>
+            <form action="/loginCoord" enctype="multipart/form-data" method="POST">
+                <div class="form-group">
+                    <div>
+                    <input type="text" id="nomeUsuarioC" class="form-control" placeholder="Nome de Usuario" name="username"/>
+                    </div>
+                    <br>
+                    <input type="password" id="senhaC" class="form-control" placeholder="Senha" name="password"/>
+                </div>
+                <button class="botaoLogin" type="submit" onClick="loginC()">Login</button>
+                <br>
+                <br>
+                <br>
+            </form>
+            <br>
+            <br>
+        </article>
+
+        <article class="conteudo-secundario">
+            <img src="../static/imagens/user2.png" alt="usuario">
+        </article>
+
+    </section>
+
+</body>
+</html>

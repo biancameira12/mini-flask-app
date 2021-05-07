@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/estilo.css') }}">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Extração de Dados</title>
+    <link href="css/estilo.css" rel="stylesheet">
+    <script	src="js/front.js"></script>
+</head>
+
+<body>
+
+<div class="fotoprincipal"></div>
+
+    <section id="conteudo-form">
+
+        <article class="conteudo-principal-form">
+          <h1>Extração de Dados</h1>
+          <br>
+            <form>
+              <label for="Titulo">Título:</label>
+              <label for="Titulo">{{ item.name }}</label>
+              <br>
+
+              <label for="Autores">Autores:</label>
+              <label for="Autores">{{ item.autores }} </label>
+              <br>
+
+              <label for="Orientadores">Orientadores:</label>
+              <label for="Orientadores">{{ item.orientadores }}</label>
+              <br>
+
+              <label for="Instituicao">Instituicao de ensino:</label>
+              <label for="Instituicao">{{ item.instituicao }}</label>
+              <br>
+
+              <label for="Tipo">Tipo:</label>
+              <label for="Tipo">{{ item.tipo }}</label>
+              <br>
+
+              <label for="palavras">Palavras chave:</label>
+              <label for="palavras">{{ item.palavras_chave }}</label>
+              <br>
+
+              <label for="resumo">Resumo:</label>
+              <label for="resumo">{{ item.resumo}}</label>
+              <br>
+
+            </form>
+
+            <br>
+        </article>
+    </section>
+
+</body>
+</html>

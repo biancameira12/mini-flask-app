@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.campo{
+    float: none;
+    left:30%;
+}
+
+.campo-logado{
+    position: absolute;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #c72121;
+    font-size: 30px;
+}
+
+.campo select {
+    padding: 0.2em;
+    border: 1px solid #c72121;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-align:center;
+    font-size:25px;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo-logado label {
+    margin-bottom: 0.2em;
+    color: #c72121;
+    margin-top: 40%;
+    font-size: 30px;
+}
+
+.campo-logado select {
+    padding: 0.2em;
+    border: 1px solid #c72121;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-align:center;
+    font-size:25px;
+}
+
+.campo-logado select option {
+    padding-right: 1em;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #c72121;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.4em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    left: 71%;
+    margin-right: -50%;
+    margin-top: 10%;
+    transform: translate(-50%, -50%)
+}
+
+.botaoSecundario {
+    font-size: 1.2em;
+    background: #c72121;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.4em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    margin-left: 60%;
+    float: left;
+    width: 220px;
+}
+
+.conteudo-principal-login {
+    float: left;  /* jogando o elemento #conteudo-principal para a esquerda */
+    width: 620px; /* largura */
+}
+
+.conteudo-principal-login h1{
+    color: #444;
+    margin: 0;
+    padding: 0px 0px 6px 0px;
+    font-size: 51px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    padding-top: 45px;
+    font-size: 34px;
+    padding-bottom: 25px;
+}
+
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao select{
+    cursor: pointer;
+}
+
+.botaoSecundario:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botaoSecundario select{
+    cursor: pointer;
+}
+
+#cabecalho{
+    height: 150px;
+}
+
+body, header, section, footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 16px; /* tamanho da fonte */
+    margin-bottom: 1.5em;
+    line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; /* padrão de fonte */
+}
+
+a:link {
+    color: #ffffff;
+    text-decoration: none; /* para os link não ficarem sublinhados*/
+}
+
+a:visited {
+    color:#ffffff;
+}
+
+a:hover {
+    color: #6A89CC;
+}
+
+.rodape-fora{
+    clear: both;
+
+}
+
+#rodape{
+    color: white;
+    background: url('../imagens/fundo-vermelho.jpg') no-repeat center;
+    background-size: 100%;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* ambos */
+#cabecalho, #conteudo, #conteudo-form, #conteudo-login, #rodape {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#menu-principal{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	text-align: right;
+	font-size: 20px;
+}
+
+#menu-principal ul {
+    list-style: none; /* tirar o formato de lista */
+}
+
+#menu-principal li {
+	padding: 18px;
+	display: inline; /* deixar alinhado */
+}
+
+#menu-principal ul li a{
+	text-decoration: none;
+	color: rgb(104, 99, 99); /* cor das letras do menu */
+}
+
+#menu-principal ul li a:hover{
+	text-decoration: none; /* tirar o sublinhado dos links */
+	color:#8395A7; /* cor do link quando eu passar o mouse*/
+}
+
+body {
+
+    background:url('../imagens/fundo_do_site.png');
+
+}
+
+#logo {
+    padding: 10px 0;
+    display: block;
+    float: left; /* posicionando minha logo para esquerda*/
+}
+
+#logo img {
+
+    display: block;
+}
+
+.fotoprincipal {
+    background: #b6b6b6  url('../imagens/foto-principal.jpg') no-repeat;
+    height: 200px;
+    background-attachment: fixed;
+    background-size: 100% 80%;
+}
+
+.conteudo-secundario {
+    margin-top: 25px;
+    padding: 0 20px 0 20px;
+    width: 280px;
+    float: right;
+    background:#FFF
+    background-attachment: fixed;
+    background-size: 50%;
+}
+
+
+/*login*/
+.conteudo-principal-logado {
+    float: left;  /* jogando o elemento #conteudo-principal para a esquerda */
+    position: relative;
+    width: 620px; /* largura */
+
+}
+
+.conteudo-principal-logado h1{
+    color: #444;
+    margin: 0;
+    padding: 0px 0px 8px 30px;
+    font-size: 51px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 34px;
+}
+
+.conteudo-principal {
+    float: left;  /* jogando o elemento #conteudo-principal para a esquerda */
+    width: 620px; /* largura */
+}
+
+.conteudo-principal h1{
+    color: #444;
+    margin: 0;
+    padding: 0px 0px 6px 0px;
+    font-size: 51px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    padding-top: 45px;
+    padding-left: 6%;
+    font-size: 34px;
+    padding-bottom: 25px;
+}
+
+.conteudo-principal-form input[type=text], input[type=date], input[type=email], input[type=tel], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/*form*/
+.conteudo-principal-form {
+    float: left;  /* jogando o elemento #conteudo-principal para a esquerda */
+    width: 620px; /* largura */
+
+}
+
+.conteudo-principal-form h1{
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    color: #444;
+    margin: 0;
+    padding: 0px 0px 6px 0px;
+    font-size: 51px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    padding-top: 25px;
+    font-size: 34px;
+}
+
+.form-group input{
+    height: 42px;
+    font-size: 18px;
+    padding-left: 54px;
+    border-radius: 5px;
+    border-color: black;
+    position: relative;
+    top: 20px;
+    right:-30%;
+}
+
+.campos input{
+    height: 42px;
+    font-size: 18px;
+    padding-left: 54%;
+    border-radius: 5px;
+    border-color: black;
+    position: relative;
+    top: 20%;
+    right:-30%;
+}
+
+.botaoLogin {
+    font-size: 1.2em;
+    background: #c72121;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.4em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    top: 70px;
+    right: -50%;
+    transform: translate(-50%, -50%)
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/estilo.css') }}">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Cadastro de trabalho</title>
+    <link href="css/estilo.css" rel="stylesheet">
+    <script	src="js/front.js"></script>
+</head>
+
+<body>
+
+<header id="cabecalho">
+
+    	<a href="/index" id="logo">
+
+        <img src="../static/imagens/logo.png" alt="Logomarca da Empresa">
+
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="/index">Pagina Inicial</a></li>
+            </ul>
+        </nav>
+
+</header>
+
+<div class="fotoprincipal"></div>
+
+    <section id="conteudo-form">
+
+        <article class="conteudo-principal-form">
+          <h1>Cadastro de trabalho acadêmico</h1>
+          <br>
+            <form action="/add" method="POST">
+              <label for="Titulo">Título:</label>
+              <input type="text" id="titulo" placeholder="Título" name="titulo">
+              <br>
+
+              <label for="Autores">Autores:</label>
+              <input type="text" id="autores" placeholder="Autores" name="autores">
+              <br>
+
+              <label for="Orientadores">Orientadores:</label>
+              <input type="text" id="orientadores" placeholder="Orientadores" name="orientadores">
+              <br>
+
+              <label for="Instituicao">Instituicao de ensino:</label>
+              <input type="text" id="instituicao" placeholder="Instituição" name="instituicao">
+              <br>
+
+              <label for="tipo" style="font-size: 20px">Tipo:</label><br><br>
+              <form id = "tipo" name="tipo">
+              <input type="radio" id="pfc" name="tipo" value="pfc">
+              <label for="pfc">PFC</label><br><br>
+              <input type="radio" id="dissertacao" name="tipo" value="dissertacao">
+              <label for="dissertacao">Dissertação</label><br><br>
+              <input type="radio" id="tese" name="tipo" value="tese">
+              <label for="tese">Tese</label>
+              </form>
+              <br>
+
+              <label for="palavras">Palavras chave:</label>
+              <input type="text" id="palavras_chave" placeholder="Palavras chave" name="palavras_chave">
+              <br>
+
+              <label for="resumo">Resumo:</label>
+              <textarea type="subject" id="resumo" name="resumo" placeholder="Resumo" style="height:200px"></textarea>
+              <br>
+              <button class="botaoSecundario" onClick="enviarDados()" type="submit" >Enviar</button>
+            </form>
+
+            <form action="/upload" enctype="multipart/form-data" method="POST">
+              <label for="file">Arquivo:</label>
+              <input type="file" id="file" name="file">
+              <br>
+              <br>
+              <button class="botaoSecundario" onClick="enviarTrab()" type="submit" accept=".pdf">Enviar</button>
+            </form>
+
+            <br>
+        </article>
+
+        <article class="conteudo-secundario">
+            <img src="../static/imagens/upload.png" width="300" height="300">
+        </article>
+
+    </section>
+
+</body>
+</html>
